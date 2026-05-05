@@ -55,3 +55,25 @@ D_Calendário = CALENDAR(
     MIN(F_Vendas[Date]), 
     MAX(F_Vendas[Date])
 )
+```
+
+Também foram aplicadas funções de agregação (SUM, AVERAGE, MEDIAN, MAX, MIN) durante o processo de agrupamento no Power Query para consolidar a visão da dimensão de produtos.
+
+---
+
+## 📐 Arquitetura do Modelo (Star Schema)
+
+O modelo final segue a estrutura de Star Schema, onde a tabela `F_Vendas` está no centro, conectando-se às tabelas `D_Produtos`, `D_Descontos`, `D_Produtos_Detalhes` e `D_Calendário` por meio de chaves numéricas (IDs).
+
+Os relacionamentos foram configurados como 1:N (um para muitos), garantindo a integridade referencial e a eficiência nas filtragens.
+
+---
+
+## 🚀 Como visualizar o projeto
+
+1. Baixe o arquivo `.pbix` presente neste repositório.
+2. Abra no **Power BI Desktop**.
+3. Navegue até a aba de **Modelo** para visualizar o diagrama de relacionamentos.
+
+---
+Desenvolvido por Diego Zares.
